@@ -1,9 +1,9 @@
-capex vs opex
+# capex vs opex
 	- CAPEX - Despesa Capital: Gastos iniciais com infra, data centers, investimento inicial com data center
 		- CAPEX tende a diminuir o custo conforme o tempo
 	- OPEX - Despesa de Oeração: Custo pago conforme o uso, pay as you go, etc
 
-Beneficios:
+# Beneficios:
 	- Alta disponibilidade (SLA (Quantos 9), multi az, etc)
 	- Escalabilidade 
 	- Elasticidade (Vertical, Horizontal, auto ou manual)
@@ -15,7 +15,7 @@ Beneficios:
 	- Governança
 	- Gerenciabilidade (IAC, APIS, PWSH, ETC)
 		
-SLA
+# SLA
 	- 99%	
 		semana: 1,68 hora
 		mes: 7,2 horas
@@ -38,3 +38,38 @@ SLA
 		ano: 5,26 segundos 
 
 	Quanto mais noves, mais tempo de disponibilidade
+
+# Modelos de Serviçp
+IaaS, PaaS, SaaS
+
+# Regiões
+ Dominio de atualização e dominio de falha 
+Regiões, Zona de disponibilidade, pares de região
+	Replicação automatica, DR
+	Sul do Brasil replica ainda para o Centro Sul dos EUA (Par de região de DR)
+	Região militar EUA (Governamental)
+	Azure China (21Vianet)
+
+# Grupo de recursos
+	- Organização logica de recursos da Azure
+	- Não é organizado por região
+	- É possivel migrar recursos do RG
+	- não é possivel renomear RG
+
+# Assinaturas
+ É possivel criar diversas assinaturas
+	- Assinatura de Desenvolvimento
+	- Assinatura de teste
+	- Assinatura de produção
+ Uma pessoa pode ter N assinaturas. 
+ Uma assinatura só pode ter uma conta (Billing)
+	Limite de cobrança e acesso
+
+
+# Grupo de gerenciamento (ORG)
+ > Assinaturas 
+   > Grupo de recursos
+    > Recursos
+
+# Replicação global
+https://datacenters.microsoft.com/globe/explore?info=region_brazilsouth
