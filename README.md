@@ -105,3 +105,46 @@ Redes Virtuais
 	- Express ROute (Rede via Cabo, link dedicado)
 	- DNS
 		- Redes e nomes customizados e privados 
+
+# Armazenameno
+
+Serviços de armazenamento
+	- Contas de armazenamento (Exclusivo)
+	- Storage Account
+	Categorias de dados
+		Blobs (Arquivos aleatorios)
+		Arquivos (Compartilhamento)
+		Tabelas
+		Filas
+		Mensagens
+
+	Discos do Azure
+Camadas de armazenamrnto
+	Frequente | Dados acessados com frequencia
+	Esporadico| Pouca frequencia e armazenados por pelo menos 30 dias
+	Frio 	  | pouco frequencia, 90 dias
+	Morto	  | Raramente, pelo menos 180 dias
+
+Redundancia
+	*LSR | DC individual, regiao primaria | 11 noves| não PRD (Os tres arquivos estão apenas no mesmo data center)
+	GRS | tres zonas de disponibilidade da regiao primari | 12 noves
+	*ZRS | Datacenter unico e regiao secundaria | 16 noves | Assincrono (Tres copias em cada datacenter e em tres datacenters, apenas indisponivel se a região ficar indiscponivel)
+	GZRS | tres zonas de disponibilidade | 16 noves
+
+Pontos de extremidades
+ Blobs		| https://...blob.core.windows.net
+ Data Lake 	| https://...dfs.core.windows;net
+ Arquivos 	| https://...file.core.windows.net
+ Filas 		| https://...queue.core.windows.net
+ Tabelas	| https://...table.core.windows.net 
+
+Migrações para a Azure
+	- Entender o objetivo final do cliente (Modernização, lift and shift, etc)
+	- Ferramentas
+	- Hypervisor, vmware, etc
+ Azure Data Box
+	- Serviço de migração fisico (Volumes altos de dados 80TB)
+ AzCopy - Copia dados para os blobs ou arquivos do Azure
+	- Servidores de arquivos para a nuvem
+ Gerenciador de armazenamento Azuew
+	- Interface grafica De Para como Windows Explorer
