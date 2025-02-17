@@ -73,3 +73,35 @@ Regiões, Zona de disponibilidade, pares de região
 
 # Replicação global
 https://datacenters.microsoft.com/globe/explore?info=region_brazilsouth
+
+# Computação e rede
+Tipos de computação
+	- Container (PaaS)
+	- VM (IaaS)(Controle sobre S.O e personalização)
+		Conjuntos de disponibilidade
+			Dominios de falhas (Racks)
+			Dominio de atualização (Pelo menos tres dominios de falha)
+			Manutenções preventivas são avisadas pelo portal
+	- Função (PaaS)
+		Baseado em eventos
+	- AKS (Orquestração de containers)
+	- dimensionamento (Disco, rede, processador etc)
+	- area de trabalho virtual (Desktop virtual)
+		pool (Varias instancias por user, limite de sessão)
+		pessoal (Maquina esxclusiva de usuario, licenciamento, etc)
+ lift and shift (Levar como esta) 
+		
+
+Hospedagem de aplicativos
+	- Serviços de aplicativos (PaaS)
+		Aplicativos API e Web de forma rapida e gerenciada
+		.NET, .NET Core, NodeJs, Java, Python PHP
+Redes Virtuais
+	- VNET, comunicaçã entre recursos
+		- SubRedes
+	- duas VNETS não se omunicam por defaul, precisa de aparelhamento
+	- Camadas de redes (Overlaps de endereços)
+	- Gateway de VPN (Site to Site pela internet)
+	- Express ROute (Rede via Cabo, link dedicado)
+	- DNS
+		- Redes e nomes customizados e privados 
