@@ -148,3 +148,55 @@ Migrações para a Azure
 	- Servidores de arquivos para a nuvem
  Gerenciador de armazenamento Azuew
 	- Interface grafica De Para como Windows Explorer
+
+# Identidade e acesso
+
+Serviço de diretorio
+	- Entra ID (AD)
+		Entra connect	
+		Autenticação
+		Aplicativos
+		b2b (negocios)
+		dispositivos
+	- Entra Domain Service
+		Sincronização on premise para a nuvem
+		Da nuvem para on premise não é suportado
+Metodo de autenticação
+	- SSO, MFA, etc
+Modelos de Segurança
+	- RBAC, Acesso de convidado, condicional
+		Condicional: local do IP, dispositivo, aplicativo, detecção de risco, grupo de user
+	- Zero trust
+	- Modelo de defesa profunda (Cebola)
+	- Microsoft defender
+		Serviço de monitoramento cloud native (Monitora GCP e AWS)
+		detecta e bloqueia malware
+		Analise e identificação
+		Acesso junst in time para portas
+
+ Permissões para usuarios e para recursos
+
+ MFA: Algo que você sabe, algo que você possui e algo que você é
+
+# MS Entra ID
+- Sync do on premise para cloud
+- Da nuvem para a cloud só é replicada a senha e não o user
+- Após exclusão de usuario após 30 dias não é mais possivel verificar o usuario no portal
+- Bulk operations (Create, Invite, Delete) (CSV)
+	Operações de usuarios por escala
+
+custom roles (Premium p1 e p2)
+	- gestão de users, monitormanetos, password administrator, etc
+	SSPR Self Service Password Reset
+ Microsoft Entra Connect 
+	- Cloud Sync (Sincronização de usuarios)
+	custom domains names
+- diferença entre User, Group, Service Principal, Managed Identity, Subscription, client secret, cleint id, tenant id, Resource group
+ Access Control por recurso e com herança
+
+# Defender for cloud
+Termometro de segurança hibrido (AWS, GCP, zure)
+	DevOps Security (Github, Azure Devops, Gitlab, etc)
+ Defender Plan:
+        Foundational CSPM (Free)
+	Defender CSPM ($5)
